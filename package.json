@@ -1,11 +1,21 @@
 {
-  "name": "zv-ui",
+  "name": "zvue-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "package/zv-ui.umd.min.js",
+  "description": "基于 Vue 移动端组件库",
+  "style": "package/zv-ui.css",
+  "keyword": "vue components zvue ui",
+  "auth": "javanzz@163.com  nj39a",
+  "files": [
+    "libs",
+    "package"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name zv-ui --dest package libs/index.js",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -14,17 +24,19 @@
     "vue-router": "^3.0.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-eslint": "^3.8.0",
-    "@vue/cli-plugin-unit-jest": "^3.8.0",
-    "@vue/cli-service": "^3.8.0",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-plugin-unit-jest": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "mddir": "^1.1.1",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
